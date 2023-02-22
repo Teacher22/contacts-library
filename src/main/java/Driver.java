@@ -28,5 +28,10 @@ public class Driver {
                     user.getName(),user.getPhoneNumber()));
             System.out.println();
         }
+        for(User user:userList){
+            System.out.println(String.format("Repeat username      : %s \nCONTACT NUMBER: %d ",
+                    user.getName(),user.getPhoneNumber()));
+            System.out.println();
+        }
     }
 }
