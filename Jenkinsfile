@@ -6,7 +6,7 @@ pipeline {
   stages {
       stage('SonarQube Analysis') {
       steps{
-      withSonarQubeEnv() {
+      withSonarQubeEnv(installationName: 'Sonar qube', envOnly: true)  {
         sh "mvn clean verify sonar:sonar -Dsonar.projectKey=Teacher22_contacts-library_AYZ0K_3K1BJcrZbvqrpA"
       }
       }
