@@ -20,6 +20,9 @@ public class Driver {
         printUsers(userList);
     }
     public static void printUsers(List<User> userList){
+        if(userList == null) {
+            throw new RuntimeException("Invalid user list");
+        }
         for(User user:userList){
             System.out.println(String.format("USERNAME      : %s \nCONTACT NUMBER: %d ",
                     user.getName(),user.getPhoneNumber()));
