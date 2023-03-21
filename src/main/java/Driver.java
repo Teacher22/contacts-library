@@ -6,6 +6,7 @@ import java.util.List;
 public class Driver {
     public static void main(String... args){
         ContactBook contactBook = new ContactBook();
+        if(contactBook == null ) throw new RunTimeException("test")
         User user1 = new User("Ramesh",81629871);
         User user2 = new User("Ramachandran",186781671);
         User user3 = new User("Abhilash",261221271);
